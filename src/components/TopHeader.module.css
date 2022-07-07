@@ -1,13 +1,144 @@
-.body{
+.body {
   margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.socialNetwork{
+.catalog {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--main-font-black-color);
+}
+
+.catalog svg {
+  color: var(--main-font-blue-color);
+  width: 20px;
+}
+
+.search {
+  width: 24%;
+  padding: 0 17px;
+  height: 36px;
+  background: #ffffff;
+  box-shadow: inset 0px 0px 3px rgba(50, 87, 164, 0.25);
+  border-radius: 10px;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.search input::placeholder {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: var(--main-font-black-color);
+}
+
+.search svg {
+  color: #c41c1b;
+}
+
+.call {
+  display: flex;
+  align-items: center;
+
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration-line: underline;
+
+  color: var(--main-font-blue-color);
+}
+
+.call svg {
+  margin-right: 3px;
+}
+
+.phone {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: var(--main-font-black-color);
+}
+
+.socialNetwork {
   display: flex;
   justify-content: space-around;
-  width: 15%;
-  color: #3257A4;
+  width: 10%;
+  color: var(--main-font-blue-color);
+}
+
+.socialNetwork h1 {
+  margin: 0;
+  cursor: pointer;
+}
+
+.navbar {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+
+.navbar__main {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.navbar__main a {
+  color: var(--main-font-black-color);
+  text-decoration: none;
+}
+
+.navbar__other {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__other__block{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar__other__block svg{
+  color: var(--main-font-blue-color);
+}
+
+.navbar__other h1 {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: var(--main-font-black-color);
 }

@@ -1,31 +1,20 @@
-import axios from "axios";
-import React from "react";
-import "./App.css";
+import React, { FC } from "react";
+import { Route, Routes } from "react-router-dom";
+
 import TopHeader from "./components/TopHeader";
+import Contact from "./components/contact/Contact";
 
-const App = () => {
-  const data = [{ name: "Roziya" }];
+import "./App.css";
 
-  const onClick = () => {
-    axios
-      .post("http://localhost:3001/", data, {
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-          "Access-Control-Allow-Origin": "*",
-        },
-      })
-      .then((res) => {
-        console.log(res.data);
-      });
-  };
-
+const App: FC = () => {
   return (
     <div>
-      <div className='wrapper'>
+      <div className="wrapper">
         <TopHeader />
       </div>
-      <button onClick={onClick}>Click me!</button>
+      <Routes>
+        <Route path="/" element={<Contact />} />
+      </Routes>
     </div>
   );
 };
