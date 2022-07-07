@@ -1,0 +1,13 @@
+.body{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socialNetwork{
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+  color: #3257A4;
+}

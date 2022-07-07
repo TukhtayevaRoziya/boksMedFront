@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import axios from "axios";
+import React from "react";
+import "./App.css";
+import TopHeader from "./components/TopHeader";
 
-function App() {
+const App = () => {
+  const data = [{ name: "Roziya" }];
+
+  const onClick = () => {
+    axios
+      .post("http://localhost:3001/", data, {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+      })
+      .then((res) => {
+        console.log(res.data);
+      });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className='wrapper'>
+        <TopHeader />
+      </div>
+      <button onClick={onClick}>Click me!</button>
     </div>
   );
-}
+};
 
 export default App;
