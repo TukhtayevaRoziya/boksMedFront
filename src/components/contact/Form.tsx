@@ -14,7 +14,11 @@ const MyForm: React.FC = () => {
       },
     })
     .then((res: any) => {
-      console.log(res.data);
+      if (res.data === 'Ok!') {
+        alert('Send your message!')
+      }else{
+        alert('Some error!')
+      }
     });
 
     console.log('Success:', values);
@@ -38,20 +42,20 @@ const MyForm: React.FC = () => {
         name="username"
         rules={[{ required: true, message: 'Please input your username!' }]}
       >
-        <Input />
+        <Input placeholder='Username!'/>
       </Form.Item>
 
       <Form.Item
         name="email"
         rules={[{ required: true, message: 'Please input your Email!' }]}
       >
-        <Input />
+        <Input placeholder='Email!'/>
       </Form.Item>
       <Form.Item
         name="message"
         rules={[{ required: true, message: 'Please input your Message!' }]}
       >
-        <Input />
+        <Input placeholder='Message!'/>
       </Form.Item>
 
       <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
