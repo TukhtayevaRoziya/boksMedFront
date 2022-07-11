@@ -6,7 +6,7 @@ const MyForm: React.FC = () => {
 
   const onFinish = (values: any) => {
     axios
-    .post("http://localhost:5000", values, {
+    .post("https://boksmed.herokuapp.com/api/contact", values, {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
