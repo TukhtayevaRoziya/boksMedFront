@@ -1,0 +1,12 @@
+.two__inp{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  border: 2px solid firebrick;
+  margin: 0 auto;
+}
+
+.mini_inp{
+  width: 100%;
+  border: 3px solid rgb(51, 25, 130);
+}

@@ -1,8 +1,10 @@
 import React from "react";
 import { Button, Form, Input } from "antd";
+
 import { instance } from "../../api/api";
 import { ResType } from "../../types/ApiTypes";
 
+import styles from './Form.module.css'
 
 const MyForm: React.FC = () => {
   const onFinish = (values: any) => {
@@ -25,24 +27,29 @@ const MyForm: React.FC = () => {
       onFinishFailed={onFinishFailed}
       autoComplete="off"
     >
-      <Form.Item
-        name="username"
-        rules={[{ required: true, message: "Please input your username!" }]}
-      >
-        <Input placeholder="Username!" />
-      </Form.Item>
+      <div className={styles.two__inp}>
+        <Form.Item
+          name="username"
+          rules={[{ required: true, message: "Please input your username!" }]}
+          className={styles.mini_inp}
+        >
+          <Input placeholder="Как вас зовут?!" />
+        </Form.Item>
 
-      <Form.Item
-        name="email"
-        rules={[{ required: true, message: "Please input your Email!" }]}
-      >
-        <Input placeholder="Email!" />
-      </Form.Item>
+        <Form.Item
+          name="email"
+          rules={[{ required: true, message: "Please input your Email!" }]}
+          className={styles.mini_inp}
+        >
+          <Input placeholder="Email!" type={"tel"}/>
+        </Form.Item>
+      </div>
+
       <Form.Item
         name="message"
         rules={[{ required: true, message: "Please input your Message!" }]}
       >
-        <Input placeholder="Message!" />
+        <Input placeholder="Сообщение!" />
       </Form.Item>
 
       <Form.Item wrapperCol={{ offset: 8, span: 16 }}>

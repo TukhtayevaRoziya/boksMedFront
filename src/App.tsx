@@ -1,13 +1,14 @@
 import React, { FC } from "react";
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import TopHeader from "./components/TopHeader";
+import TopHeader from "./components/topHeader/TopHeader";
 import Contact from "./components/contact/Contact";
 
 import "./App.css";
 
 const App: FC = () => {
   return (
+      <BrowserRouter>
     <div>
       <div className="wrapper">
         <TopHeader />
@@ -15,7 +16,9 @@ const App: FC = () => {
       <Routes>
         <Route path="/" element={<Contact />} />
       </Routes>
+      learn react
     </div>
+      </BrowserRouter>
   );
 };
 
