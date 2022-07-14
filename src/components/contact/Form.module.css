@@ -2,7 +2,7 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
-  margin: 40px auto;
+  margin: 2em auto;
 }
 
 .mini_inp {
@@ -24,8 +24,8 @@
   font-family: var(--main-font-family);
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 1.3em;
+  line-height: 1.5em;
 
   color: var(--main-font-black-color);
 }

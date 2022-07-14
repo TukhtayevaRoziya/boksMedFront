@@ -93,11 +93,11 @@
 }
 
 .navbar {
-  margin-top: 50px;
+  margin-top: 2.5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 16px;
+  padding-bottom: 1em;
 }
 
 .navbar__main {
@@ -108,8 +108,8 @@
   font-family: var(--main-font-family);
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 1em;
+  line-height: 1.3em;
 }
 
 .navbar__main a {
@@ -137,8 +137,8 @@
   font-family: var(--main-font-family);
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 1em;
+  line-height: 1.3em;
 
   color: var(--main-font-black-color);
 }
