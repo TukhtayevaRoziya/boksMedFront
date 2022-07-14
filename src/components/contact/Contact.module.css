@@ -20,6 +20,11 @@
   justify-content: space-between;
 }
 
+.title__block img{
+  width: 4.5em;
+  height: auto;
+}
+
 .title__block h1 {
   font-family: var(--main-font-family);
   font-style: normal;
