@@ -18,6 +18,8 @@ const MyForm: React.FC = () => {
   };
 
   return (
+    <>
+    <div className={styles.hr} />
     <Form
       name="basic"
       labelCol={{ span: 8 }}
@@ -58,6 +60,7 @@ const MyForm: React.FC = () => {
         </Button>
       </Form.Item>
     </Form>
+    </>
   );
 };
 

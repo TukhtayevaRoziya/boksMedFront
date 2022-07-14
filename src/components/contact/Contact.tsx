@@ -1,10 +1,11 @@
 import React, { FC } from "react";
 import { Breadcrumb } from "antd";
 
-import main from '../../assets/contact.png'
+import main from '../../assets/contact.webp'
+
+import MyForm from './Form';
 
 import styles from "./Contact.module.css";
-import MyForm from './Form';
 
 const Contact: FC = () => {
   return (
@@ -27,6 +28,7 @@ const Contact: FC = () => {
         <div className={styles.main__block}>
             <MyForm/>
         </div>
+        
       </div>
     </div>
   );

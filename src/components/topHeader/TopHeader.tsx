@@ -1,18 +1,18 @@
 import React, { FC } from "react";
+import { NavLink } from "react-router-dom";
 
-import { BsTelegram, BsWhatsapp } from "react-icons/bs";
 import { FaViber } from "react-icons/fa";
-import { HiMenuAlt3 } from "react-icons/hi";
 import { BsSearch } from "react-icons/bs";
+import { HiMenuAlt3 } from "react-icons/hi";
 import { FiPhoneCall } from "react-icons/fi";
 import { IoStatsChart } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BsTelegram, BsWhatsapp } from "react-icons/bs";
 
-import logo from "../../assets/icons/logo.png";
+import logo from "../../assets/icons/logo.webp";
 
 import styles from "./TopHeader.module.css";
-import { NavLink } from "react-router-dom";
 
 const TopHeader: FC = () => {
   const data = [
@@ -25,7 +25,9 @@ const TopHeader: FC = () => {
   ];
 
   const dataMap = data.map((d) => (
-    <NavLink key={d.id} to={d.to}>{d.name}</NavLink>
+    <NavLink key={d.id} to={d.to}>
+      {d.name}
+    </NavLink>
   ));
 
   return (
@@ -57,7 +59,6 @@ const TopHeader: FC = () => {
       </div>
       <div className={styles.navbar}>
         <div className={styles.navbar__main}>{dataMap}</div>
-
         <div className={styles.navbar__other}>
           <div className={styles.navbar__other__block}>
             <IoStatsChart />

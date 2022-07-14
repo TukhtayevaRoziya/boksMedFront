@@ -1,12 +1,38 @@
-.two__inp{
+.two__inp {
   width: 90%;
   display: flex;
-  justify-content: center;
-  border: 2px solid firebrick;
-  margin: 0 auto;
+  justify-content: space-between;
+  margin: 40px auto;
 }
 
-.mini_inp{
-  width: 100%;
-  border: 3px solid rgb(51, 25, 130);
+.mini_inp {
+  width: 48%;
+}
+
+.mini_inp div {
+  max-width: 100%;
+}
+
+.mini_inp input {
+  background: #ffffff;
+  box-shadow: inset 0px 0px 3px rgba(50, 87, 164, 0.25);
+  border-radius: 15px;
+  height: 50px;
+}
+
+.mini_inp input::placeholder {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: var(--main-font-black-color);
+}
+
+.hr{
+  border: 0.5px solid #497AE2;
+  height: 0;
+  box-sizing: border-box;
+  margin-top: .5rem;
 }

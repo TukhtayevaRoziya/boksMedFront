@@ -18,9 +18,8 @@ code {
     url("./assets/fonts/Geometria-Regular.woff") format("woff");
 }
 
-
-:root{
-  --main-font-family: "Geometria",  sans-serif;
+:root {
+  --main-font-family: "Geometria", sans-serif;
   --main-font-black-color: #111111;
   --main-font-blue-color: #3257a4;
 }
