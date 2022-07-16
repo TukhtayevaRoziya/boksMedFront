@@ -1,6 +1,7 @@
 .two__inp {
   width: 90%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 2em auto;
 }
@@ -28,6 +29,10 @@
   line-height: 1.5em;
 
   color: var(--main-font-black-color);
+}
+
+.two__inp .mini_inp:last-child{
+  width: 100%;
 }
 
 .hr{

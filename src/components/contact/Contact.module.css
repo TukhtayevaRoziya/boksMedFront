@@ -1,5 +1,5 @@
 .body {
-  padding: 50px 10% 200px;
+  padding: 3em 10% 5em;
   background-color: #f7f9fb;
 }
 
@@ -20,7 +20,7 @@
   justify-content: space-between;
 }
 
-.title__block img{
+.title__block img {
   width: 4.5em;
   height: auto;
 }
@@ -31,7 +31,6 @@
   font-weight: 500;
   font-size: 1.5em;
   line-height: 2em;
-
   color: var(--main-font-blue-color);
 }
 
@@ -41,6 +40,36 @@
   font-weight: 400;
   font-size: 1.3em;
   line-height: 1.5em;
-
   color: #000000;
+}
+
+@media (min-width: 0) and (max-width: 1200px) {
+  .body {
+    padding: 2em 5% 4em;
+  }
+
+  .block {
+    width: 90%;
+  }
+}
+
+@media (min-width: 0) and (max-width: 800px) {
+  .block {
+    width: 100%;
+    margin: 2em auto 0;
+  }
+
+  .title__block h1 {
+    font-size: 0.7em;
+    line-height: 1.2em;
+  }
+
+  .title__block p {
+    font-size: 0.9em;
+    line-height: 1.3em;
+  }
+
+  .title__block img {
+    display: none;
+  }
 }

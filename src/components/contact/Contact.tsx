@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import { Breadcrumb } from "antd";
 
-import main from '../../assets/contact.webp'
+import main from "../../assets/contact.webp";
 
-import MyForm from './Form';
+import MyForm from "./Form";
 
 import styles from "./Contact.module.css";
 
@@ -23,12 +23,11 @@ const Contact: FC = () => {
               время.
             </p>
           </div>
-          <img src={main} alt=''/>
+          <img src={main} alt="" />
         </div>
         <div className={styles.main__block}>
-            <MyForm/>
+          <MyForm />
         </div>
-        
       </div>
     </div>
   );
