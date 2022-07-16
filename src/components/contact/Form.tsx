@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Form, Input } from "antd";
+import { Form, Input } from "antd";
 
 import { instance } from "../../api/api";
 import { ResType } from "../../types/ApiTypes";
@@ -39,7 +39,8 @@ const MyForm: React.FC = () => {
   ];
 
   const dataMap = data.map((d) => (
-    <Form.Item key={d.id}
+    <Form.Item
+      key={d.id}
       name={d.name}
       rules={[{ required: true, message: d.message }]}
       className={styles.mini_inp}
@@ -62,9 +63,7 @@ const MyForm: React.FC = () => {
       >
         <div className={styles.two__inp}>{dataMap}</div>
         <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-          <Button type="primary" htmlType="submit">
-            Submit
-          </Button>
+          <div className={styles.btn}/>
         </Form.Item>
       </Form>
     </>

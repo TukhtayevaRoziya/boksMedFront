@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 2em auto;
+  margin: 2em auto 0;
 }
 
 .mini_inp {
@@ -27,17 +27,44 @@
   font-weight: 400;
   font-size: 1.3em;
   line-height: 1.5em;
-
   color: var(--main-font-black-color);
 }
 
-.two__inp .mini_inp:last-child{
+.two__inp .mini_inp:last-child {
   width: 100%;
 }
 
-.hr{
-  border: 0.5px solid #497AE2;
+.hr {
+  border: 0.5px solid #497ae2;
   height: 0;
   box-sizing: border-box;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  height: 4em;
+  background-image: url(../../assets/contact/btn.webp);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 0) and (max-width: 600.9px) {
+  .mini_inp {
+    width: 100%;
+  }
+
+  .btn{
+    background-position: center;
+    height: 3em;
+    background-size: contain;
+  }
+
+  .mini_inp input {
+    height: 3em;
+  }
+
+  .mini_inp input::placeholder {
+    font-size: 1em;
+    line-height: 1em;
+  }
 }

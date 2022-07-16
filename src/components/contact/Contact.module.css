@@ -41,6 +41,7 @@
   font-size: 1.3em;
   line-height: 1.5em;
   color: #000000;
+  width: 99%;
 }
 
 @media (min-width: 0) and (max-width: 1200px) {

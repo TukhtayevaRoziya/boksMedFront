@@ -23,3 +23,14 @@ code {
   --main-font-black-color: #111111;
   --main-font-blue-color: #3257a4;
 }
+
+.ant-col-offset-8{
+  margin-left: 5%;
+  width: 100%;
+}
+
+@media (min-width: 0) and (max-width: 600.9px) {
+  .ant-col-offset-8{
+    margin-left: 0;
+  }
+}
