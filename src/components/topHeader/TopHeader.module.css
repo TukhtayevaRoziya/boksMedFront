@@ -147,3 +147,22 @@
   width: 10em;
   height: auto;
 }
+
+.navbarSm {
+  width: 100%;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+
+.spanNavBtn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.spanNavBtn svg {
+  height: 1.7em;
+  width: 1.7em;
+  color: #3257a4;
+}

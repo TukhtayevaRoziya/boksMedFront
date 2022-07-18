@@ -2,3 +2,38 @@
   width: 80%;
   margin: 0 auto;
 }
+
+.ant-drawer-header,
+.ant-drawer-body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ant-drawer-header {
+  padding: 1em 0;
+}
+
+.anticon svg {
+  color: var(--main-font-blue-color);
+}
+
+@media (min-width: 0) and (max-width: 1200px) {
+  .wrapper,
+  .ant-drawer-header,
+  .ant-drawer-body {
+    width: 100%;
+  }
+
+  .wrapper {
+    padding: 0 5%;
+  }
+
+  .ant-drawer-header,
+  .ant-drawer-body {
+    padding: 1em 5%;
+  }
+
+  .ant-drawer-close {
+    margin: 0;
+  }
+}

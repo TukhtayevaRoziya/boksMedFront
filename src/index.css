@@ -29,6 +29,10 @@ code {
   width: 100%;
 }
 
+.ant-drawer-header-title{
+  flex-direction: row-reverse;
+}
+
 @media (min-width: 0) and (max-width: 600.9px) {
   .ant-col-offset-8{
     margin-left: 0;
