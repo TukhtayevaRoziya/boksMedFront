@@ -24,6 +24,7 @@ const Contact: FC = () => {
             </p>
           </div>
           <img src={main} alt="" />
+          <button>Hy</button>
         </div>
         <div className={styles.main__block}>
           <MyForm />

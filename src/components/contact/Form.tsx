@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Input } from "antd";
+import { Button, Form, Input } from "antd";
 
 import { instance } from "../../api/api";
 import { ResType } from "../../types/ApiTypes";
@@ -65,6 +65,12 @@ const MyForm: React.FC = () => {
         <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
           <div className={styles.btn}/>
         </Form.Item>
+        <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+        <Button type="primary" htmlType="submit">
+          Submit
+        </Button>
+      </Form.Item>
+
       </Form>
     </>
   );

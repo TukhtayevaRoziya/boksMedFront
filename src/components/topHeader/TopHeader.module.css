@@ -52,7 +52,8 @@
   color: #c41c1b;
 }
 
-.call {
+.call,
+.call_sm {
   display: flex;
   align-items: center;
 
@@ -66,11 +67,18 @@
   color: var(--main-font-blue-color);
 }
 
-.call svg {
+.call_sm {
+  justify-content: center;
+  margin-bottom: 1.5em;
+}
+
+.call svg,
+.call_sm svg {
   margin-right: 3px;
 }
 
-.phone {
+.phone,
+.phone_sm {
   font-family: var(--main-font-family);
   font-style: normal;
   font-weight: 400;
@@ -80,14 +88,25 @@
   color: var(--main-font-black-color);
 }
 
-.socialNetwork {
+.phone_sm {
+  text-align: center;
+}
+
+.socialNetwork,
+.socialNetwork_sm {
   display: flex;
   justify-content: space-around;
   width: 10%;
   color: var(--main-font-blue-color);
 }
 
-.socialNetwork h1 {
+.socialNetwork_sm{
+  width: 15em;
+  margin: 1.5em auto;
+}
+
+.socialNetwork h1,
+.socialNetwork_sm h1 {
   margin: 0;
   cursor: pointer;
 }
@@ -112,9 +131,14 @@
   line-height: 1.3em;
 }
 
-.navbar__main a {
+.navbar__main a,
+.navbar__main_sm a {
   color: var(--main-font-black-color);
   text-decoration: none;
+}
+
+.navbar__main_sm a{
+  margin-bottom: 1.5em;
 }
 
 .navbar__other {
@@ -165,4 +189,24 @@
   height: 1.7em;
   width: 1.7em;
   color: #3257a4;
+}
+
+.navbar__main_sm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.3em;
+  padding-top: 1.5em;
+}
+
+@media (min-width: 1001px) and (max-width:1200.9px) {
+  .socialNetwork{
+    display: none;
+  }
 }

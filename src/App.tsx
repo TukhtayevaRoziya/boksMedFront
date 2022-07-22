@@ -6,20 +6,19 @@ import TopHeader from "./components/topHeader/TopHeader";
 import Contact from "./components/contact/Contact";
 
 import "./App.css";
+import Footer from "./components/footer/Footer";
 
 const App: FC = () => {
-const [size, setSize] = useState<Boolean>(false)
+  const [size, setSize] = useState<Boolean>(false);
 
-    window.addEventListener("resize", () => {
-      
-      if (window.innerWidth < 1000) {
-        setSize(true);
-      } else {
-        setSize(false);
-      }
-    });
-    
-  
+  window.addEventListener("resize", () => {
+    if (window.innerWidth < 1000) {
+      setSize(true);
+    } else if (size) {
+      setSize(false);
+    }
+  });
+
   return (
     <BrowserRouter>
       <div>
@@ -29,7 +28,7 @@ const [size, setSize] = useState<Boolean>(false)
         <Routes>
           <Route path="/" element={<Contact />} />
         </Routes>
-        learn react
+        <Footer />
       </div>
     </BrowserRouter>
   );
