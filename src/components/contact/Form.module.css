@@ -43,9 +43,12 @@
 
 .btn {
   height: 4em;
+  width: 15em;
   background-image: url(../../assets/contact/btn.webp);
   background-size: auto;
   background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
 }
 
 @media (min-width: 0) and (max-width: 600.9px) {

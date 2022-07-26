@@ -1,6 +1,9 @@
 import React from "react";
 
-import logo from '../../assets/icons/logo.webp'
+import { FaViber } from "react-icons/fa";
+import { BsTelegram, BsWhatsapp } from "react-icons/bs";
+
+import logo from "../../assets/icons/logo.webp";
 
 import styles from "./Footer.module.css";
 
@@ -9,23 +12,23 @@ const Footer = () => {
     <footer className={styles.footer_distributed}>
       <div className={styles.footer_left}>
         <h3>
-          <img src={logo} alt=''/>
+          <img src={logo} alt="" />
         </h3>
 
         <p className={styles.footer_links}>
           <a href="/" className={styles.link_1}>
-            Home
+            О компании
           </a>
 
-          <a href="/">Blog</a>
+          <a href="/">Доставка</a>
 
-          <a href="/">Pricing</a>
+          <a href="/">Оплата</a>
 
-          <a href="/">About</a>
+          <a href="/">Новости</a>
 
-          <a href="/">Faq</a>
+          <a href="/">Реквизиты</a>
 
-          <a href="/">Contact</a>
+          <a href="/">Контакты</a>
         </p>
 
         <p className={styles.footer_company_name}>Company Name © 2015</p>
@@ -33,19 +36,19 @@ const Footer = () => {
 
       <div className={styles.footer_center}>
         <div>
-          <i className={styles.fa + ' ' +  styles.fa_map_marker}></i>
+          <i className={styles.fa + " " + styles.fa_map_marker}></i>
           <p>
             <span>444 S. Cedros Ave</span> Solana Beach, California
           </p>
         </div>
 
         <div>
-          <i className={styles.fa +' ' + styles.fa_phone}></i>
-          <p>+1.555.555.5555</p>
+          <i className={styles.fa + " " + styles.fa_phone}></i>
+          <p>+8 (3412) 65-08-77</p>
         </div>
 
         <div>
-          <i className={styles.fa + ' ' + styles.fa_envelope}></i>
+          <i className={styles.fa + " " + styles.fa_envelope}></i>
           <p>
             <a href="mailto:support@company.com">support@company.com</a>
           </p>
@@ -61,16 +64,13 @@ const Footer = () => {
 
         <div className={styles.footer_icons}>
           <a href="/">
-            <i className={styles.fa + ' ' + styles.fa_facebook}></i>
+            <FaViber />
           </a>
           <a href="/">
-            <i className={styles.fa + ' ' + styles.fa_twitter}></i>
+            <BsTelegram />
           </a>
           <a href="/">
-            <i className={styles.fa + ' ' + styles.fa_linkedin}></i>
-          </a>
-          <a href="/">
-            <i className={styles.fa + ' ' + styles.fa_github}></i>
+            <BsWhatsapp />
           </a>
         </div>
       </div>
